@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    git 'https://gitlab.com/bluestone1/bluestone-java-maven'
+    git 'https://github.com/twishishshrimali/test2'
       }
   stage('Complie-Package') {
       //Get Maven path
