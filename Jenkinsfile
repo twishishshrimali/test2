@@ -6,6 +6,6 @@ node {
       //Get Maven path
       def mvnHome = tool name: 'Maven3', type: 'maven'
       sh "${mvnHome}/bin/mvn package"
-      sh "${mvnHome}/bin/mvn jetty:run"
+      sh "${mvnHome}/bin/mvn java -jar start.jar -Djetty.port=9997"
     }
   }
